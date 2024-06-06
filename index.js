@@ -14,7 +14,6 @@ const PORT =  3000;
 app.listen(PORT,()=>{
     console.log("Corriendo servidor en http://localhost:" + PORT);
 })
-
 /*Conexion con mysql*/
 const servidores=[
     {
@@ -32,7 +31,7 @@ const servidores=[
         database: process.env.database2
     }
 ]
-const connection = mysql.createConnection(servidores[1]);
+const connection = mysql.createConnection(servidores[0]);
 connection.connect((err)=>{
     if(err){
         //throw err
