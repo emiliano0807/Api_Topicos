@@ -31,7 +31,7 @@ const servidores=[
         database: process.env.database2
     }
 ]
-const connection = mysql.createConnection(servidores[0]);
+const connection = mysql.createConnection(servidores[1]);
 connection.connect((err)=>{
     if(err){
         //throw err
